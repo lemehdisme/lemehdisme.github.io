@@ -233,6 +233,10 @@
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         font-family: "Avenir Next", sans-serif;
       }
+      
+            .image-container .btn-shop:hover {
+        font-size: 18px;
+      }
 
       @media (min-width: 768px) {
         .image-container {
@@ -586,6 +590,14 @@
           }
         });
       });
+    </script>      
+    <script>      
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+const navbarLinks = document.querySelector(".navbar-links");
+
+hamburgerMenu.addEventListener("click", function() {
+  navbarLinks.classList.toggle("show-links");
+});
     </script>
   </body>
 </html>
