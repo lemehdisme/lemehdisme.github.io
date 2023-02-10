@@ -89,7 +89,7 @@
         font-family: "Avenir Next", sans-serif;
       }
 
-      /* navbar */
+ /* navbar */
       .navbar {
         background-color: black;
         color: white;
@@ -100,7 +100,6 @@
         height: 30px;
         position: fixed;
         z-index: 1;
-        /*Add this*/
         width: 100%;
         top: 0;
         font-family: "Avenir Next", sans-serif;
@@ -116,6 +115,18 @@
 
       .navbar a:hover {
         font-weight: bold;
+      }
+
+  /*media query for mobile view */
+      @media (max-width: 767px) {
+        .navbar {
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .navbar a {
+          margin: 20px 0;
+        }
       }
 
       /* clothing categories */
