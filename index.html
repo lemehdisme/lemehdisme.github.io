@@ -119,26 +119,13 @@
       }
 
       /* clothing categories */
-        .categories {
+      .categories {
         padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-      .carousel-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        }
-
-        .carousel-slide {
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-        position: relative;
-    }
+        flex-wrap: wrap;
+      }
 
       .image-container {
         width: 100%;
@@ -147,14 +134,13 @@
         overflow: hidden;
         position: relative;
         margin-bottom: 20px;
-        float: left;
-    }
+      }
 
       .image-container img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-     }
+      }
 
       .image-container>.text {
         position: absolute;
@@ -415,30 +401,32 @@
         </div>
       </div>
     </div>    
-<div class="categories">
-   <div class="carousel-container">
-      <div class="carousel-slide">
-         <div class="image-container">
-            <img src="https://cdn.vox-cdn.com/thumbor/rE9cQ8h21x8xqeQmEMk-ESPpQEY=/250x250/cdn.vox-cdn.com/uploads/chorus_asset/file/3878248/DrielyS-4212.0.jpg">
-            <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:black; opacity:0.5;"></div>
-            <div class="text">Men's Clothing</div>
-            <a class="btn-shop" href="#">Shop</a>
-         </div>
-         <div class="image-container">
-            <img src="https://www.femalefirst.co.uk/image-library/partners/bang/square/250/r/rihanna-aW1hZ2VzMS8yMDE5LzEyLzAzLzAzNzc4NDcwMDE1NzUzNzQwMzgt.jpg">
-            <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:black; opacity:0.5;"></div>
-            <div class="text">Women's Clothing</div>
-            <a class="btn-shop" href="#">Shop</a>
-         </div>
+    <div class="categories">
+      <div class="image-container">
+        <img src="https://cdn.vox-cdn.com/thumbor/rE9cQ8h21x8xqeQmEMk-ESPpQEY=/250x250/cdn.vox-cdn.com/uploads/chorus_asset/file/3878248/DrielyS-4212.0.jpg">
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:black; opacity:0.5;"></div>
+        <div class="text">Men's Clothing</div>
+        <a class="btn-shop" href="#">Shop</a>
       </div>
-      <a class="carousel-control left" href="#">
-         <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_402-512.png">
-      </a>
-      <a class="carousel-control right" href="#">
-         <img src="http://pixsector.com/cache/81183b13/avcc910c4ee5888b858fe.png">
-      </a>
-   </div>
-</div>
+      <div class="image-container">
+        <img src="https://www.femalefirst.co.uk/image-library/partners/bang/square/250/r/rihanna-aW1hZ2VzMS8yMDE5LzEyLzAzLzAzNzc4NDcwMDE1NzUzNzQwMzgt.jpg">
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:black; opacity:0.5;"></div>
+        <div class="text">Women's Clothing</div>
+        <a class="btn-shop" href="#">Shop</a>
+      </div>
+      <div class="image-container">
+        <img src="http://cdn.shopify.com/s/files/1/0558/7199/6099/products/IMG_1653_grande.jpg?v=1640088916">
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:black; opacity:0.5;"></div>
+        <div class="text">Accessories</div>
+        <a class="btn-shop" href="#">Shop</a>
+      </div>
+      <div class="image-container">
+        <img src="https://di2ponv0v5otw.cloudfront.net/posts/2021/10/02/615938fcff830491a635f74a/s_615939d1c32ee6c7bc458419.jpg">
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:black; opacity:0.5;"></div>
+        <div class="text">Footwear</div>
+        <a class="btn-shop" href="#">Shop</a>
+      </div>
+    </div>
     <div style="clear: both;"></div>
     <!--Item slider text-->
     <div class="container">
