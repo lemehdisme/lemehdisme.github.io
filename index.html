@@ -89,33 +89,83 @@
         font-family: "Avenir Next", sans-serif;
       }
 
- /* navbar */
-      .navbar {
-        background-color: black;
-        color: white;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        height: 30px;
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        top: 0;
-        font-family: "Avenir Next", sans-serif;
-        border-radius: 0px;
-      }
+/* navbar */
+.navbar {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 30px;
+  position: fixed;
+  z-index: 1;
+  /* Add this */
+  width: 100%;
+  top: 0;
+  font-family: "Avenir Next", sans-serif;
+  border-radius: 0px;
+}
 
-      .navbar a {
-        color: white;
-        text-decoration: none;
-        margin: 0 20px;
-        font-size: 15px;
-      }
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 15px;
+}
 
-      .navbar a:hover {
-        font-weight: bold;
-      }
+.navbar a:hover {
+  font-weight: bold;
+}
+
+/* Media query to collapse the navbar into a hamburger menu in smaller screens */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  /* Hamburger menu button */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius: 3px;
+  }
+
+  /* Show the links when the hamburger menu is clicked */
+  .show-links {
+    display: block;
+  }
+
+  /* Styling for the links in the expanded menu */
+  .navbar-links {
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .navbar-links a {
+    display: block;
+    padding: 10px;
+    color: white;
+  }
+}
+
 
       /* clothing categories */
       .categories {
@@ -174,8 +224,8 @@
         text-align: center;
         font-size: 15px;
         font-weight: bold;
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 10px 20px;
         border-radius: 20px;
         text-decoration: none;
