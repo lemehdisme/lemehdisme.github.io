@@ -24,35 +24,45 @@
         font-family: "Avenir Next", sans-serif;
       }
 
-      /* promotion */
-      .promo {
-        background-image: url(http://image.noelshack.com/fichiers/2023/06/3/1675854351-untitled-design-1.png);
-        background-size: contain;
-        height: 500px;
-        width: 100%;
-        object-fit: cover;
-        object-position: bottom;
-        display: flex;
-        align-items: end;
-        justify-content: center;
-        text-align: center;
-      }
-      
-      .promo-btn {
-        background-color: black;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 20px;
-        text-decoration: none !important;
-        margin: 20px 10px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        font-family: "Avenir Next", sans-serif;
-      }
+/* promotion */
+.promo {
+  background-image: url(http://image.noelshack.com/fichiers/2023/06/3/1675854351-untitled-design-1.png);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  text-align: center;
+}
 
-      .promo-btn:hover {
-        font-weight: bold;
-        color: white;
-      }
+.promo-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none !important;
+  margin: 20px 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Avenir Next", sans-serif;
+  font-size: 1rem;
+}
+
+.promo-btn:hover {
+  font-weight: bold;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo {
+    height: 200px;
+  }
+  .promo-btn {
+    font-size: 0.8rem;
+  }
+}
 
       /* products */
       .products {
