@@ -129,48 +129,6 @@
   .navbar a {
     display: none;
   }
-
-  /* Hamburger menu button */
-  .hamburger-menu {
-    display: block;
-    cursor: pointer;
-    padding: 10px;
-    margin: 0;
-  }
-
-  .hamburger-menu .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    border-radius: 3px;
-  }
-
-  /* Show the links when the hamburger menu is clicked */
-  .show-links {
-    display: block;
-  }
-
-  /* Styling for the links in the expanded menu */
-  .navbar-links {
-    background-color: black;
-    color: white;
-    display: block;
-    text-align: left;
-    padding: 10px;
-    font-family: "Avenir Next", sans-serif;
-  }
-
-  .navbar-links a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .navbar-links a:hover {
-    font-weight: bold;
-}
 }
 
 
@@ -446,19 +404,6 @@
       <a href="#">Women</a>
       <a href="#">About Us</a>
       <a href="#">Contact</a>
-      <div class="hamburger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    </div>
-    <div class="navbar-links">
-      <a href="#">Home</a>
-      <a href="#">Latest Collections</a>
-      <a href="#">Men</a>
-      <a href="#">Women</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
     </div>
     <br>
     <br>
@@ -611,15 +556,5 @@
         });
       });
     </script>      
-    <script>      
-      window.onload = function() {
-      const hamburgerMenu = document.querySelector(".hamburger-menu");
-const navbarLinks = document.querySelector(".navbar-links");
-
-hamburgerMenu.addEventListener("click", function() {
-  navbarLinks.classList.toggle("show-links");
-});
-        };
-    </script>
   </body>
 </html>
