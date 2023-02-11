@@ -2,41 +2,37 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clothing Brand Landing Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> /* this */
+    <!-- Latest compiled and minified CSS -->
+    <!-- https://xstore.8theme.com/demos/hosting/-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-      /* navbar */
-      .navbar {
-        background-color: black;
-        color: white;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        height: 30px;
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        top: 0;
-        font-family: "Avenir Next", sans-serif;
-        border-radius: 0px;
+      .topnav {
         overflow: hidden;
-        /* this */
+        background-color: #333;
       }
 
-      .navbar a {
-        color: white;
-        text-decoration: none;
-        margin: 0 20px;
-        font-size: 15px;
+      .topnav a {
         float: left;
         display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
       }
 
-      .navbar a:hover {
-        font-weight: bold;
+      .topnav a:hover {
+        color: black;
       }
 
       .topnav .icon {
@@ -74,24 +70,22 @@
     </style>
   </head>
   <body>
-    <div class="navbar" id="mynavbar">
-      <a href="#">Homee</a>
-      <a href="#">Latest Collections</a>
-      <a href="#">Men</a>
-      <a href="#">Women</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
     <script>
       function myFunction() {
-        var x = document.getElementById("mynavbar");
-        if (x.className === "navbar") {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
           x.className += " responsive";
         } else {
-          x.className = "navbar";
+          x.className = "topnav";
         }
       }
     </script>
